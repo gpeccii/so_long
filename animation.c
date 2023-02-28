@@ -6,10 +6,9 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:27:42 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 18:57:11 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/02/28 19:30:11 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "so_long.h"
 
@@ -36,7 +35,7 @@ int	animation(t_game *game)
 	else if (game->pos_enemy == 2)
 		put_image("images/enemy2.xpm", "images/collect2.xpm", game);
 	else if (game->pos_enemy == 3)
-		put_image("images/enemy3.xpm", "images/collect3.xpm",game);
+		put_image("images/enemy3.xpm", "images/collect3.xpm", game);
 	else if (game->pos_enemy == 4)
 		put_image("images/enemy4.xpm", "images/collect4.xpm", game);
 	else

@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:29:10 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 18:51:34 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/02/28 19:31:03 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	argv_check(char *argv)
 	return (0);
 }
 
-	int	main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_game	game;
 

@@ -6,7 +6,7 @@
 #    By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/27 17:27:27 by gpecci            #+#    #+#              #
-#    Updated: 2023/02/28 19:03:08 by gpecci           ###   ########.fr        #
+#    Updated: 2023/02/28 19:10:23 by gpecci           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,8 +67,8 @@ clean:
 
 fclean:			clean
 					rm -f $(NAME)
-					make fclean -C ${LIBFT_PATH}
-					make fclean -C ${MINILIBX_PATH}
+					rm -f $(MINILIBX)
+					rm -f $(LIBFT)
 
 re:				fclean all
 

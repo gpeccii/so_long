@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 12:33:41 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 17:49:17 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/02/28 19:28:51 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	win_d(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
+	ft_putstr("HAI VINTO!!!!");
+	ft_putstr("\n");
 }
 
 void	win_s(t_game *game)
@@ -30,6 +32,8 @@ void	win_s(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
+	ft_putstr("HAI VINTO!!!!");
+	ft_putstr("\n");
 }
 
 void	win_a(t_game *game)
@@ -40,6 +44,8 @@ void	win_a(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
+	ft_putstr("HAI VINTO!!!!");
+	ft_putstr("\n");
 }
 
 void	win_w(t_game *game)
@@ -50,4 +56,6 @@ void	win_w(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
+	ft_putstr("HAI VINTO!!!!");
+	ft_putstr("\n");
 }
