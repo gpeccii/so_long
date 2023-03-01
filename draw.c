@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:28:04 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 19:30:22 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/01 17:57:47 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,12 @@ int	draw_map(t_game *game)
 			x++;
 		}
 		y++;
+	}
+	if (game->n_collect == -1)
+	{
+		game->img_end = mlx_xpm_file_to_image(game->mlx,
+			"images/end.xpm", &game->x, &game->x);
+		mlx_put_image_to_window(game->mlx, game->win, game->img_end, game->map_w/2-300, game->map_h/2 - 100);
 	}
 	display_moves(game);
 	return (0);

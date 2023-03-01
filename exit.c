@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:28:14 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 19:30:34 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/01 14:37:36 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	exit_game(t_game *game)
 	mlx_destroy_image(game->mlx, game->img_enemy);
 	mlx_destroy_window(game->mlx, game->win);
 	mlx_destroy_image(game->mlx, game->img_wall2);
+	mlx_destroy_image(game->mlx, game->img_end);
 	exit(0);
 	return (0);
 }
