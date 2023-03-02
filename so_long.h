@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:29:16 by gpecci            #+#    #+#             */
-/*   Updated: 2023/03/01 14:37:36 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/02 16:09:51 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ typedef struct s_game
 	int		loop;
 	int		pos_enemy;
 	void	*img_end;
-	int		x;
 }	t_game;
 
 # define KEY_ESC 53
@@ -81,5 +80,6 @@ void	win_a(t_game *game);
 void	win_s(t_game *game);
 void	win_d(t_game *game);
 void	display_term(t_game *game);
+void	win_image(t_game *game);
 
 #endif

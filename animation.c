@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:27:42 by gpecci            #+#    #+#             */
-/*   Updated: 2023/02/28 19:30:11 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/02 16:04:56 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ int	animation(t_game *game)
 		game->pos_enemy = 0;
 	}
 	draw_map(game);
-	draw_wall(game);
 	game->pos_enemy++;
 	return (0);
 }

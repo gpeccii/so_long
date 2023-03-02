@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 12:33:41 by gpecci            #+#    #+#             */
-/*   Updated: 2023/03/01 17:16:45 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/02 16:26:59 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	win_d(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
-	ft_putstr("YOU WIN!!!!");
-	ft_putstr("\n");
 }
 
 void	win_s(t_game *game)
@@ -34,8 +32,6 @@ void	win_s(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
-	ft_putstr("YOU WIN!!!!");
-	ft_putstr("\n");
 }
 
 void	win_a(t_game *game)
@@ -47,8 +43,6 @@ void	win_a(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
-	ft_putstr("YOU WIN!!!!");
-	ft_putstr("\n");
 }
 
 void	win_w(t_game *game)
@@ -60,7 +54,16 @@ void	win_w(t_game *game)
 	game->endgame = 1;
 	draw_map(game);
 	draw_wall(game);
-	ft_putstr("YOU WIN!!!!");
-	ft_putstr("\n");
 }
 
+void	win_image(t_game *game)
+{
+	int	x;
+	int	y;
+
+	mlx_clear_window(game->mlx, game->win);
+	game->img_end = mlx_xpm_file_to_image(game->mlx,
+			"images/win.xpm", &x, &y);
+	mlx_put_image_to_window(game->mlx, game->win, game->img_end,
+		(((game->map_w) / 2) - 390), (((game->map_h) / 2) - 85));
+}
