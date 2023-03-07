@@ -6,7 +6,7 @@
 /*   By: gpecci <gpecci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:29:10 by gpecci            #+#    #+#             */
-/*   Updated: 2023/03/01 14:07:16 by gpecci           ###   ########.fr       */
+/*   Updated: 2023/03/02 16:41:05 by gpecci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	main(int argc, char **argv)
 	}
 	else
 	{
-		ft_putstr("Error\nInvalid Sytax");
+		ft_putstr("Error\nToo many arguments");
 		exit(1);
 	}
 	return (0);
